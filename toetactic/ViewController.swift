@@ -14,8 +14,8 @@ class ViewController: UIViewController {
     var gameState = [0, 0, 0, 0, 0, 0, 0, 0, 0] //0 = empty, 1 = noughts, 2 = crosses
     let winningCombinations = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]]
     
-    var xpositions = [9, 9, 9]
-    var opositions = [9, 9, 9]
+    var xpositions = [9]
+    var opositions = [9]
 
     @IBOutlet weak var button0: UIButton!
     @IBOutlet weak var button1: UIButton!
@@ -83,35 +83,129 @@ class ViewController: UIViewController {
 
     @IBAction func button0(_ sender: Any) {
         if x % 2 == 0 {
-           // button0.imageView?.image = UIImage(named: "oimage")
+            button0.setImage(UIImage(named: "oimage2"), for: .normal)
         }else
         {
-           // button0.imageView?.image = UIImage(named: "ximage")
-            
             button0.setImage(UIImage(named: "ximage2"), for: .normal)
         }
         
         x += 1
-        print("pressed!")
+        print("pressed! 0")
+        print(x)
         
         button0.isEnabled = false
         
     }
     @IBAction func button1(_ sender: Any) {
+        if x % 2 == 0 {
+            button1.setImage(UIImage(named: "oimage2"), for: .normal)
+        }else
+        {
+            button1.setImage(UIImage(named: "ximage2"), for: .normal)
+        }
+        
+        x += 1
+        print("pressed! 1")
+        print(x)
+        
+        button1.isEnabled = false
+        
     }
     @IBAction func button2(_ sender: Any) {
+        if x % 2 == 0 {
+            button2.setImage(UIImage(named: "oimage2"), for: .normal)
+        }else
+        {
+            button2.setImage(UIImage(named: "ximage2"), for: .normal)
+        }
+        
+        x += 1
+        print("pressed! 0")
+        print(x)
+        
+        button2.isEnabled = false
     }
     @IBAction func button3(_ sender: Any) {
+        if x % 2 == 0 {
+            button3.setImage(UIImage(named: "oimage2"), for: .normal)
+        }else
+        {
+            button3.setImage(UIImage(named: "ximage2"), for: .normal)
+        }
+        
+        x += 1
+        print("pressed! 0")
+        print(x)
+        
+        button3.isEnabled = false
     }
     @IBAction func button4(_ sender: Any) {
-    }
+        if x % 2 == 0 {
+            button4.setImage(UIImage(named: "oimage2"), for: .normal)
+        }else
+        {
+            button4.setImage(UIImage(named: "ximage2"), for: .normal)
+        }
+        
+        x += 1
+        print("pressed! 0")
+        print(x)
+        
+        button4.isEnabled = false    }
     @IBAction func button5(_ sender: Any) {
-    }
+        if x % 2 == 0 {
+            button5.setImage(UIImage(named: "oimage2"), for: .normal)
+        }else
+        {
+            button5.setImage(UIImage(named: "ximage2"), for: .normal)
+        }
+        
+        x += 1
+        print("pressed! 0")
+        print(x)
+        
+        button5.isEnabled = false    }
     @IBAction func button6(_ sender: Any) {
+        if x % 2 == 0 {
+            button6.setImage(UIImage(named: "oimage2"), for: .normal)
+        }else
+        {
+            button6.setImage(UIImage(named: "ximage2"), for: .normal)
+        }
+        
+        x += 1
+        print("pressed! 0")
+        print(x)
+        
+        button6.isEnabled = false
     }
     @IBAction func button7(_ sender: Any) {
+        if x % 2 == 0 {
+            button7.setImage(UIImage(named: "oimage2"), for: .normal)
+        }else
+        {
+            button7.setImage(UIImage(named: "ximage2"), for: .normal)
+        }
+        
+        x += 1
+        print("pressed! 0")
+        print(x)
+        
+        button7.isEnabled = false
     }
     @IBAction func button8(_ sender: Any) {
+        if x % 2 == 0 {
+            button8.setImage(UIImage(named: "oimage2"), for: .normal)
+        }else
+        {
+            button8.setImage(UIImage(named: "ximage2"), for: .normal)
+        }
+        
+        x += 1
+        print("pressed! 0")
+        print(x)
+        
+        button8.isEnabled = false
     }
     
   
